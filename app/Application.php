@@ -5,8 +5,16 @@ namespace App;
 class Application
 {
 	public function run() {
-		(new Cpliakas())->run()->printResults();
-		(new Czproject())->run()->printResults();
-		(new Cypresslab())->run()->printResults();
+	  $testApps = [
+		  new Cpliakas(),
+		  new Czproject(),
+		  new Cypresslab(),
+		  new Coyl(),
+    ];
+
+		foreach ($testApps as $testApp) {
+		  /** @var GitTestApp $testApp */
+		  $testApp->run()->printResults();
+    }
 	}
 }
