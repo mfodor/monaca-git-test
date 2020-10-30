@@ -1,0 +1,30 @@
+{
+    "name": "monaca/testing-git-packages",
+    "description": "Testing PHP packages performance that interact with git executable",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mfodor",
+            "email": "manuel.fodor@itware.hu"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "cpliakas/git-wrapper": "^1.7",
+        "czproject/git-php": "9999999-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/helpers.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
