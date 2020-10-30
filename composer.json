@@ -12,6 +12,7 @@
     "minimum-stability": "dev",
     "require": {
         "cpliakas/git-wrapper": "^1.7",
+        "cypresslab/gitelephant": "^1.1",
         "czproject/git-php": "9999999-dev"
     },
     "autoload": {
